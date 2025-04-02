@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Vídeos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .login-container, .video-container, .video-main, .footer {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .video-container video, .video-main video, .video-container iframe, .video-main iframe {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" required>
+            <br>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <div class="video-container">
+        <h2>Vídeos</h2>
+        <video controls>
+            <source src="video1.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=RHGfSpxo1ik" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=RHGfSpxo1ik" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-main">
+        <h2>Vídeo Principal</h2>
+        <video controls>
+            <source src="main-video.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Meu Site de Vídeos</p>
+    </div>
+</body>
+</html>
