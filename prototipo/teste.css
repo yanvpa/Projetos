@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solução Balanças</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #003087;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .nav {
+      background-color: #f8f8f8;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    .nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+    .container {
+      display: flex;
+      margin: 20px;
+    }
+    .sidebar {
+      width: 200px;
+      padding-right: 20px;
+    }
+    .sidebar a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+    .main-content {
+      flex: 1;
+    }
+    .main-content h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .card {
+      position: relative;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card .play-button::before {
+      content: '▶';
+      color: white;
+      font-size: 20px;
+    }
+    .card p {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Solução Balanças</h1>
+  </div>
+  <div class="nav">
+    <a href="#">Balanças</a>
+    <a href="#">Embaladoras</a>
+    <a href="#">Fatiadores</a>
+    <a href="#">Liquidificadores</a>
+    <a href="#">Moedores</a>
+    <a href="#">Processadores</a>
+    <a href="#">Raladores Yole</a>
+    <a href="#">Seladoras</a>
+    <a href="#">Serras Fitas</a>
+  </div>
+  <div class="container">
+    <div class="sidebar">
+      <a href="#">Balanças</a>
+      <a href="#">Embaladoras</a>
+      <a href="#">Fatiadores</a>
+      <a href="#">Liquidificadores</a>
+      <a href="#">Moedores</a>
+      <a href="#">Processadores</a>
+      <a href="#">Raladores Yole</a>
+      <a href="#">Seladoras</a>
+      <a href="#">Serras Fitas</a>
+    </div>
+    <div class="main-content">
+      <h2>RECOMENDADOS</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/200x150" alt="Balança">
+          <div class="play-button"></div>
+          <p>Conserto Balança Prix5</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/200x150" alt="Balança">
+          <div class="play-button"></div>
+          <p>Conserto Balança Prix5</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/200x150" alt="Balança">
+          <div class="play-button"></div>
+          <p>Conserto Balança Prix5</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/200x150" alt="Balança">
+          <div class="play-button"></div>
+          <p>Conserto Balança Prix5</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/200x150" alt="Balança">
+          <div class="play-button"></div>
+          <p>Conserto Balança Prix5</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/200x150" alt="Balança">
+          <div class="play-button"></div>
+          <p>Conserto Balança Prix5</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/200x150" alt="Balança">
+          <div class="play-button"></div>
+          <p>Conserto Balança Prix5</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/200x150" alt="Balança">
+          <div class="play-button"></div>
+          <p>Conserto Balança Prix5</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/200x150" alt="Balança">
+          <div class="play-button"></div>
+          <p>Conserto Balança Prix5</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/200x150" alt="Balança">
+          <div class="play-button"></div>
+          <p>Conserto Balança Prix5</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/200x150" alt="Balança">
+          <div class="play-button"></div>
+          <p>Conserto Balança Prix5
