@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        footer {
+            background-color: #003087; 
+            color: white;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+        .footer-links, .footer-contact {
+            margin: 10px 0;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+            position: relative;
+        }
+        .footer-links a:hover {
+            text-decoration: none; 
+        }
+        .footer-links a:hover::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 2px;
+            background-color: #ff0000; 
+        }
+        .footer-contact p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 12px;
+            border-top: 1px solid #ffffff33;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#">Balanças</a>
+                <a href="#">Embaladoras</a>
+                <a href="#">Fatiadores</a>
+                <a href="#">Liquidificadores</a>
+                <a href="#">Moedores</a>
+                <a href="#">Processadores</a>
+                <a href="#">Raladores</a>
+                <a href="#">Seladoras</a>
+                <a href="#">Serras Fitas</a>
+            </div>
+            <div class="footer-contact">
+                <p>Contato: (11) 1234-5678</p>
+                <p>Email: contato@solucaobalancas.com.br</p>
+                <p>Endereço: Rua Exemplo, 123 - São Paulo, SP</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Solução Balanças. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
