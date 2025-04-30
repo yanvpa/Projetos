@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        footer {
+            background-color: #003087; 
+            color: white;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            width: 100%;
+            
+        }
+        .footer-container {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 20px;
+            width: 100%; 
+            box-sizing: border-box; 
+            flex-direction: column;
+        }
+        .footer-links, .footer-contact {
+            margin: 10px 0;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column; 
+            gap: 10px;
+        }
+        .footer-contact {
+            display: flex;
+            flex-direction: column; 
+            gap: 5px;
+        }
+        .footer-contact a,
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        .footer-links a:hover, .footer-contact a:hover {
+            text-decoration: underline; 
+        }
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 12px;
+            border-top: 1px solid #ffffff33;
+            padding-top: 10px;
+            width: 100%; 
+        }
+        .footer-titulo {
+            padding-bottom: pxpx;
+            border-bottom: 1px solid white;
+            width: 300px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <h1 class="footer-titulo">Navegação</h1>
+                <a href="#">Balanças</a>
+                <a href="#">Embaladoras</a>
+                <a href="#">Fatiadores</a>
+                <a href="#">Liquidificadores</a>
+                <a href="#">Moedores</a>
+                <a href="#">Processadores</a>
+                <a href="#">Raladores</a>
+                <a href="#">Seladoras</a>
+                <a href="#">Serras Fitas</a>
+            </div>
+            <div class="footer-contact">
+                <a href="#"><i class="ri-phone-fill"></i>  (61) 99228-4400</a>
+                <a href="#"><i class="ri-mail-fill"></i>  sos_balancas@outlook.com</a>
+                <a href="#"><i class="ri-map-pin-5-fill"></i>SHSN CHÁCARA 11 LOTE 02 LOJA 01,
+                    Ceilândia Sul - Ceilândia, Brasília - DF,
+                    72236-800</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Solução Balanças. <br>Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
