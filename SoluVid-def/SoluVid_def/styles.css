@@ -1,0 +1,59 @@
+/* Imortando reset */
+@import url(./css/reset.css);
+
+/* Importando fonte poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Importando boxicon */
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+
+/* Importe RemixIcons */
+@import url("https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css");
+
+/* Importando estilo login */
+@import url(./css/login.css);
+
+/* Importando estilo Barra de navegação */
+@import url(./css/navbar.css);
+
+/* Importando estilo container cards */
+@import url(./css/container__cards.css);
+
+/* Importando estilo footer */
+@import url(./css/footer.css);
+
+/* Importando estilo vídeo pages */
+@import url(./css/video_page.css);
+
+/* Importando Paginação */
+@import url(./css/pagination.css);
+
+/* Importando Minimo de tela */
+@import url(./css/minimo_tela.css);
+
+:root {
+    --primary-font: "Poppins", sans-serif; /* Fonte primária automatica */
+    --blue: #2B2D80;
+    --blue-hover: #2e30a4;
+    --white: white;
+    --red: #C50F0F;
+    --dark-orange: #ED6F22;
+    --back-color: #f5f5f5;
+    --gray-info: #666;
+    --black: black;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 65px;
+    background-color: #f5f5f5;
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        margin-top: 90px;
+        /* min-height: 90vh; */
+    }
+}

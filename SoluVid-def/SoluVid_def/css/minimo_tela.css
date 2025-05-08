@@ -1,0 +1,28 @@
+@media screen and (min-width: 344px) {
+    .minTela {
+        min-height: 90vh;
+    }
+}
+
+.minTela {
+    width: 100%;
+    min-height: 23vh;
+}
+
+@media screen and (min-width: 768px) {
+    .minTela {
+        min-height: 78vh;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .minTela {
+        min-height: 38vh;
+    }
+}
+
+/* @media screen and (min-width: 1600px) {
+    .minTela {
+        min-height: 50vh;
+    }
+} */

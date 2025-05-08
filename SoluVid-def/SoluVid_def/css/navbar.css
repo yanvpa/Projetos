@@ -1,0 +1,344 @@
+/* Esqueleto barra de navegação mobile */
+/* A barra de navegação tem 43px de height */
+nav {
+    background-color: var(--blue);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav__bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.logo__nav__bar {
+    padding: 2px;
+    width: 190px;
+}
+
+.nav__links {
+    display: none;
+}
+
+/* .input__box{
+    display: none;
+} */
+
+.bx {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 20px;
+}
+
+li a {
+    color: white;
+    font-size: 20px;
+}
+
+.sub__menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.sub__menu li {
+    padding: 2px;
+    border-bottom: solid var(--white) 1px;
+}
+
+.links li a {
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 100%;
+}
+
+
+/* Side bar mobile */
+
+.sider__logo__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 0 20px;
+    /* width: 100%; */
+}
+
+.sider__logo {
+    width: 185px;
+}
+
+.sider__logo__container .bx-x {
+    position: relative;
+    top: -10px;
+    right: 8px;
+    font-size: 32px;
+    cursor: pointer;
+    /* background-color: red; */
+}
+
+.links {
+    padding-left: 20px;
+}
+
+.nav__links {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: -100%;
+    /* left: 0; */
+    max-width: 270px;
+    width: 100%;
+    /* padding: 20px; */
+    line-height: 35px;
+    background-color: var(--blue);
+    transition: all 0.5s ease;
+    z-index: 100;
+    overflow: auto;
+    /* Faz com que seja possivel scrollar a side bar */
+    height: 100%;
+    /* gap: 5px; */
+}
+
+#btn__logout__descktop,
+#btn__logout {
+    background-color: var(--red);
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    width: 100px;
+    margin-left: 20px;
+    /* align-self: center; */
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Scrollbar para navegadores baseados em WebKit (Chrome, Edge, etc.) */
+.nav__links::-webkit-scrollbar {
+    width: 8px;
+}
+
+.nav__links::-webkit-scrollbar-track {
+    background: white;
+    /* Fundo da barra */
+}
+
+.nav__links::-webkit-scrollbar-thumb {
+    background-color: white;
+    /* Parte que arrasta */
+    border-radius: 10px;
+    border: 2px solid white;
+    /* Deixa uniforme */
+}
+
+/* Scrollbar para Firefox */
+.nav__links {
+    scrollbar-width: thin;
+    scrollbar-color: white white;
+    /* Alça branca / Fundo branco */
+}
+
+/* class para mostrar submenu */
+.show__submenu {
+    max-height: 500px;
+    /* max-height: max-content; */
+    /* overflow: visible; */
+}
+
+.links li .arrow {
+    cursor: pointer;
+    padding: 3px;
+}
+
+.arrow {
+    /* transform: rotate(180deg); */
+    transition: transform 0.3s ease;
+}
+
+.links li {
+    padding: 5px;
+}
+
+.sub__menu li a {
+    /* background-color: red; */
+    padding-right: 100%;
+    /* Não deixa a linha quebrar */
+    white-space: nowrap;
+}
+
+.input__box {
+    position: fixed;
+    top: 58px;
+    /* ajuste conforme seu layout */
+    left: 50%;
+    transform: translateX(100%);
+    opacity: 0;
+    background-color: var(--dark-orange);
+    padding: 15px;
+    width: 100%;
+    max-width: 100000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease, opacity 0.4s ease;
+    z-index: 200;
+    pointer-events: none;
+}
+
+.input__box input {
+    padding: 8px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+}
+
+.show__input {
+    transform: translateX(-50%);
+    opacity: 1;
+    pointer-events: all;
+}
+
+.search__box i {
+    transition: transform 0.4s ease;
+}
+
+#btn__logout__descktop {
+    display: none;
+}
+
+.catalogo__nav__tablet {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .catalogo__nav__tablet {
+        position: absolute;
+        top: 20;
+        left: 15%;
+        display: block;
+        z-index: 99;
+        color: var(--white);
+        font-size: 15px;
+    }
+}
+
+/* Versão Desctop */
+@media screen and (min-width: 1025px) {
+    .catalogo__nav__tablet {
+        display: none;
+    }
+
+    .sider__logo__container {
+        display: none;
+    }
+
+    .bx-menu {
+        display: none;
+    }
+
+    #btn__logout {
+        display: none;
+    }
+
+    .nav__links .links li i {
+        display: none;
+    }
+
+    #btn__logout__descktop {
+        display: block;
+        width: 75px;
+        transition: all 0.4s ease;
+    }
+
+    #btn__logout__descktop:hover {
+        background-color: brown;
+    }
+
+    .nav__links .links {
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        top: 62px;
+        left: 0;
+        width: 100%;
+        line-height: 20px;
+        background-color: var(--dark-orange);
+        transition: all 0.5s ease;
+        overflow: auto;
+        /* Faz com que seja possivel scrollar a side bar */
+        height: auto;
+        padding-left: 0;
+        justify-content: center;
+        gap: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav__links .links li a {
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .nav__links .links li a:hover {
+        text-decoration: underline;
+    }
+
+    .links li {
+        position: relative;
+    }
+
+    .sub__menu {
+        background-color: var(--dark-orange);
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease;
+        z-index: 98;
+    }
+
+    .show__submenu {
+        max-height: 500px;
+    }
+
+    .input__box {
+        top: 93px;
+        background-color: var(--blue);
+        width: 50%;
+        transition: transform 1s ease, opacity 0.5s ease;
+        opacity: 0;
+    }
+
+    .input__box input {
+        padding: 8px;
+        width: 90%;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .show__input {
+        transform: translateX(86%);
+        border-radius: 0 0 0 15px;
+        width: 25%;
+        opacity: 1;
+        /* z-index: 1; */
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .nav__links .links li a {
+        font-size: 18px;
+    }
+}

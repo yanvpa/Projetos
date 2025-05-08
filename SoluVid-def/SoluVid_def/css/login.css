@@ -1,0 +1,53 @@
+.container__login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2) ;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.img__login {
+    /* border: 1px solid red; */
+    width: 200px;
+}
+
+.form__login {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.campo__input {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.input__login {
+    padding: 2px;
+    width: 192px;
+}
+
+#btn__login {
+    background-color: var(--blue);
+    padding: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#btn__login:hover {
+    background-color: var(--blue-hover);
+}
+
+.mensagem__erro {
+    visibility: hidden;
+    color: red;
+    font-size: 14px;
+}

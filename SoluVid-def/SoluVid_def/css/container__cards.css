@@ -1,0 +1,151 @@
+/* Garante que o body ocupa a tela inteira e centraliza tudo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background-color: #f5f5f5;
+}
+
+.titulo__container__cards {
+    margin-top: 5px;
+    border-bottom: solid 2px black;
+    width: 92%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Container com Grid centralizado */
+.container__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    width: 90%;
+    padding: 1em;
+    align-items: center;
+    /* min-height: 100vh; */
+}
+
+/* Estilizando os cards */
+.card {
+    background: white;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid red; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+    width: 100%;
+}
+
+.card__link {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__img__video {
+    width: 100%;
+    height: auto;
+    /* max-width: 200px; */
+    /* border-radius: 4px; */
+}
+
+.container__cards__info {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    width: 90%;
+    /* border: solid 1px red; */
+    justify-content: space-around;
+}
+
+.card__title {
+    font-size: 18px;
+    margin-top: 0.5em;
+    color: var(--black);
+}
+
+.card p {
+    color: var(--gray-info);
+    font-size: 14px;
+}
+
+.video__title {
+    color: var(--black);
+    font-size: 22px;
+}
+
+.span__video__equipamento {
+    color: var(--black);
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+
+@media screen and (min-width: 768px) {
+
+    /* Container com Grid centralizado */
+    .container__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2em;
+        justify-content: center;
+        width: 92%;
+        padding: 1em;
+    }
+
+    .card__title {
+        font-size: 14px;
+        margin-top: 0.5em;
+        color: var(--black);
+    }
+
+    .card p {
+        color: var(--gray-info);
+        font-size: 9px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+    /* Container com Grid centralizado */
+    .container__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1em;
+        justify-content: center;
+        width: 90%;
+        padding: 1em;
+    }
+
+    .titulo__container__cards {
+        margin-top: 15px;
+        border-bottom: solid 2px black;
+        width: 90%;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .card__title {
+        font-size: 16px;
+        margin-top: 0.5em;
+        color: var(--black);
+    }
+
+    .card p {
+        color: var(--gray-info);
+        font-size: 12px;
+    }
+
+}
